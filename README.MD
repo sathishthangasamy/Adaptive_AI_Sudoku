@@ -13,7 +13,7 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/YourUsername/sudoku-ai-game.git
+git clone https://github.com/sathishthangasamy/Adaptive_AI_Sudoku.git
 cd sudoku-ai-game
 (Remember to replace YourUsername with your actual GitHub username and the repository name if it's different!)
 
