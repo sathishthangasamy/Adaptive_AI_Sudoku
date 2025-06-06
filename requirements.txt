@@ -1,2 +1,3 @@
+streamlit
 # No external libraries needed for this basic Tkinter version
 # If you use other libraries later (e.g., NumPy for performance, though not necessary here), add them.

@@ -31,12 +31,12 @@ class SudokuGenerator:
         return False
 
     def generate_puzzle(self, difficulty_level="medium"):
-        """
-        Generates a Sudoku puzzle with a unique solution.
-        Difficulty levels: "easy", "medium", "hard".
-        """
-        solved_board = self.generate_full_board()
-        puzzle_board = [row[:] for row in solved_board] # Copy for puzzle creation
+    """
+    Generates a Sudoku puzzle with a unique solution.
+    Difficulty levels: "easy", "medium", "hard".
+    """
+    solved_board = self.generate_full_board() # This is the full solved board
+    puzzle_board = [row[:] for row in solved_board] # Copy for puzzle creation
 
         # Define number of cells to remove based on difficulty
         if difficulty_level == "easy":
@@ -73,7 +73,7 @@ class SudokuGenerator:
             else:
                 puzzle_board[r][c] = original_value # If not unique, put it back
 
-        return puzzle_board
+        return puzzle_board, solved_board
 
 if __name__ == '__main__':
     generator = SudokuGenerator()
